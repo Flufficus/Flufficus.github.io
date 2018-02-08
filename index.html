@@ -2,6 +2,19 @@
 <html>
 
 <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+        var myArray = [
+            " '<iframe frameBorder=none width=500px height=700px src=tweet3.html></iframe>';",
+            " '<iframe frameBorder=none width=500px height=200px src=tweet2.html></iframe>';",
+            " '<iframe frameBorder=none width=500px height=200px src=tweet1.html></iframe>';"
+        ];
+
+        var randomItem =
+            myArray[Math.floor(Math.random() * myArray.length)];
+
+
+    </script>
 
     <link href="https://fonts.googleapis.com/css?	family=Encode+Sans+Expanded" rel="stylesheet">
 
@@ -18,9 +31,11 @@
             height: 192px;
             border: 0;
         }
-        p,h1 {
+
+        p, h1 {
             font-family: 'Encode Sans Expanded', sans-serif;
         }
+
         body {
             text-align: center;
             background: url(./assets/backgroundmango.png) no-repeat center center fixed;
@@ -31,6 +46,11 @@
 </head>
 
 <body>
+    <script>
+    document.body.innerHTML = randomItem;
+    </script>
+
+    <div id="tweet"></div>
     <br>
     <br>
     <br>
