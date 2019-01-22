@@ -4,8 +4,12 @@ ul,li,blockquote,p {
   border: none;
   list-style: none;
 }
- 
- 
+
+
+.weatherwidget-io {
+  z-index: -25;
+}
+
  
 /* Start */
  
